@@ -1,3 +1,69 @@
 * {
   box-sizing: border-box;
 }
+
+html, body {margin:0;padding:0;height:100%;}
+
+body {
+  display: flex;
+  min-height: 100%;
+}
+
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -4px;
+  width: 65%;
+
+}
+
+div.main {
+  width: 66.6666%;
+}
+
+.boxes {
+  height: 33.3333%;
+  width: 33.3333%;
+}
+
+.boxes img {
+  display: block;
+}
+
+.banner {
+  display: flex;
+  width: 35%
+}
+
+.main {
+  background: #2FB267;
+}
+
+.profile {
+  background: #FF8D00;
+}
+
+.experience {
+  background: #1576BA;
+}
+
+.education {
+  background: #EE4134;
+}
+
+.blog {
+  background: #2FB267;
+}
+
+.social {
+  background: #F6520F;
+}
+
+.contact {
+  background: #1576BA;
+}
+
+.portfolio {
+  background: #F6520F;
+}
