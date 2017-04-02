@@ -1,70 +1,166 @@
-* {box-sizing: border-box;}
-html, body {margin:0; padding:0; height:100%;}
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin:0;
+  padding:0;
+  height:100%;}
+
+/*Font Stuff*/
+h1,
+p {
+  color: white;
+}
+
+p {
+  font-size: 12px;
+}
+
+h1 {
+  font-weight: 700;
+}
 
 body {
   display: flex;
-  min-height: 100%;
   font-family: 'Roboto', sans-serif;
 }
 
-.links {
+.container {
   display: flex;
   flex-wrap: wrap;
   width: 65%;
 }
 
-div.main {
-  width: 66.6666%;
+.text-icon {
+  display: inline;
+  height: 12px;
+  margin-right: 3px;
 }
 
-.boxes {
-  height: 33.3333%;
-  width: 33.3333%;
+.head,
+.box {
+  height: 33.3333vh;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-div img {
-  height: 100px;
+.box {
+  width: 33.3333%;
+  align-items: center;
+}
+
+.name {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.head {
+  width: 66.6666%;
+  padding: 0 30px 0 30px;
+}
+
+.head p {
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+.quick-link {
+  display: inline;
+  background: none;
+  border: solid 1px white;
+  color: white;
   width: 100px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.body-icon {
+  width: 25%;
   display: block;
 }
 
-
+.captions {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
 
 .banner {
+  width: 35%;
+  background-image: url('images/waterfall.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  width: 35%
+  justify-content: space-between;
+  align-items: center;
 }
+
+.button {
+  height: 40px;
+  width: 40px;
+  background-color: none;
+  padding: 0;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .banner {
+    order: -1;
+    width: 100%;
+    height: 50vh;
+    background-image: url('images/landscape waterfall.jpg');
+  }
+
+  body {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .head {
+    width: 100%;
+  }
+  .box {
+    width: 50%;
+
+  }
+}
+
+@media screen and (max-height: 500px) {
+
+}
+
+
+
+
+
+
+
 
 /*Set Colors*/
-.main {
-  background: #2FB267;
-}
-
-.profile {
-  background: #FF8D00;
-}
-
-.experience {
-  background: #1576BA;
-}
-
-.education {
-  background: #EE4134;
-}
-
-.blog {
-  background: #2FB267;
-}
-
-.social {
-  background: #F6520F;
-}
-
-.contact {
-  background: #1576BA;
-}
-
-.portfolio {
-  background: #F6520F;
-}
+.head {background: #2FB267;}
+.profile {background: #FF8D00;}
+.experience {background: #1576BA;}
+.education {background: #EE4134;}
+.blog {background: #2FB267;}
+.social {background: #F6520F;}
+.contact {background: #1576BA;}
+.portfolio {background: #F6520F;}
