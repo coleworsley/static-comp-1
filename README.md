@@ -2,3 +2,6 @@
 
 ## Original
 ![alt text](http://frontend.turing.io/assets/images/static-comp-challenge-1.jpg)
+
+
+![alt text](images/MyComp.png)
