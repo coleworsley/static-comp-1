@@ -5,9 +5,8 @@
 html, body {
   margin:0;
   padding:0;
-  height:100%;}
+}
 
-/*Font Stuff*/
 h1,
 p {
   color: white;
@@ -140,12 +139,22 @@ body {
   }
   .box {
     width: 50%;
+    height: 25vh;
+  }
 
+  .portfolio {
+    width: 100%
+  }
+  .portfolio .body-icon{
+    width: 12.5%;
   }
 }
 
 @media screen and (max-height: 500px) {
-
+  .box,
+  .head {
+    height: 165px;
+  }
 }
 
 
@@ -159,8 +168,8 @@ body {
 .head {background: #2FB267;}
 .profile {background: #FF8D00;}
 .experience {background: #1576BA;}
-.education {background: #EE4134;}
+.education {background: #F6520F;}
 .blog {background: #2FB267;}
-.social {background: #F6520F;}
+.social {background: #EE4134;}
 .contact {background: #1576BA;}
 .portfolio {background: #F6520F;}
