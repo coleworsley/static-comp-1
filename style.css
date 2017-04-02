@@ -116,6 +116,27 @@ body {
   padding: 0;
 }
 
+.navigation {
+  height: 30px;
+  content: 'test';
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.navigation div {
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  margin: .5px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.navigation .nav1 {
+  background-color: white;
+}
+
 @media screen and (max-width: 900px) {
   .banner {
     order: -1;
